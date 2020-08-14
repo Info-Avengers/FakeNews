@@ -5,8 +5,7 @@ import Button from "../components/Button";
 import Typography from "../components/Typography";
 import ProductHeroLayout from "./ProductHeroLayout";
 
-const backgroundImage =
-  "https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80";
+const backgroundImage = "https://blog.avast.com/hubfs/fake-news.jpg";
 
 const styles = (theme) => ({
   background: {
