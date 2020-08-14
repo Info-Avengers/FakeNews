@@ -1,26 +1,26 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import Typography from '../components/Typography';
+import * as React from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Typography from "../components/Typography";
 
 const styles = (theme) => ({
   root: {
-    display: 'flex',
-    overflow: 'hidden',
+    display: "flex",
+    overflow: "hidden",
     backgroundColor: theme.palette.secondary.light,
   },
   container: {
     marginTop: theme.spacing(15),
     marginBottom: theme.spacing(30),
-    display: 'flex',
-    position: 'relative',
+    display: "flex",
+    position: "relative",
   },
   item: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     padding: theme.spacing(0, 5),
   },
   image: {
@@ -31,8 +31,8 @@ const styles = (theme) => ({
     marginBottom: theme.spacing(5),
   },
   curvyLines: {
-    pointerEvents: 'none',
-    position: 'absolute',
+    pointerEvents: "none",
+    position: "absolute",
     top: -180,
   },
 });
@@ -57,14 +57,11 @@ function ProductValues(props) {
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Explore Social Media and Open Web
               </Typography>
               <Typography variant="h5">
                 {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
+                  "With our elite researchers using advanced contemporary web search methods we will find suspicious news outlets."
                 }
               </Typography>
             </div>
@@ -77,13 +74,12 @@ function ProductValues(props) {
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Research and Document
               </Typography>
               <Typography variant="h5">
                 {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
+                  "Suspicious sources will then undergo extensive scrutiny from our crack team of researchers documenting any and all evidence of inconsistent reporting."
                 }
-                {'your Sundays will not be alike.'}
               </Typography>
             </div>
           </Grid>
@@ -95,11 +91,12 @@ function ProductValues(props) {
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                Eradication
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {
+                  "Once a source has been exposed as undeniably fake, our shadow hackers will take measures to slow down or stop the source from providing further fake news to the public."
+                }
               </Typography>
             </div>
           </Grid>
