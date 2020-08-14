@@ -20,7 +20,7 @@ const styles = (theme) => ({
     marginBottom: theme.spacing(4),
     marginTop: theme.spacing(4),
     [theme.breakpoints.up("sm")]: {
-      marginTop: theme.spacing(46),
+      marginTop: theme.spacing(60),
     },
   },
   more: {
