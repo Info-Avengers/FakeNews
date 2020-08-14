@@ -1,13 +1,10 @@
 {
     "paths": [
         {
-            "name": "/report",
+            "name": "/reports",
             "lambdaFunction": "fakenews60106483",
             "privacy": {
-                "private": true,
-                "auth": [
-                    "/POST"
-                ]
+                "open": true
             }
         }
     ],
@@ -19,7 +16,7 @@
         }
     ],
     "privacy": {
-        "auth": 1,
+        "auth": 0,
         "unauth": 0,
         "authRoleName": "amplify-fakenews-dev-222401-authRole",
         "unAuthRoleName": "amplify-fakenews-dev-222401-unauthRole"
@@ -33,5 +30,6 @@
                 "Arn"
             ]
         }
-    ]
+    ],
+    "uuid": "0b7ad89d"
 }
