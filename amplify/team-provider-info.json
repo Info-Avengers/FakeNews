@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-fakenews-dev-222401-authRole",
+            "UnauthRoleArn": "arn:aws:iam::144504656881:role/amplify-fakenews-dev-222401-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::144504656881:role/amplify-fakenews-dev-222401-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-fakenews-dev-222401-deployment",
+            "UnauthRoleName": "amplify-fakenews-dev-222401-unauthRole",
+            "StackName": "amplify-fakenews-dev-222401",
+            "StackId": "arn:aws:cloudformation:us-east-1:144504656881:stack/amplify-fakenews-dev-222401/9aa0c5c0-dddd-11ea-9902-0a1f955da693",
+            "AmplifyAppId": "d3qoyt8w8n3iem"
+        }
+    }
+}
