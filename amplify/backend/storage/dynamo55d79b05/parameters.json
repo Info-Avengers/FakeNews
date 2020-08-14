@@ -1,0 +1,7 @@
+{
+    "tableName": "reports",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S",
+    "sortKeyName": "author",
+    "sortKeyType": "S"
+}

@@ -10,6 +10,11 @@
             "StackName": "amplify-fakenews-dev-222401",
             "StackId": "arn:aws:cloudformation:us-east-1:144504656881:stack/amplify-fakenews-dev-222401/9aa0c5c0-dddd-11ea-9902-0a1f955da693",
             "AmplifyAppId": "d3qoyt8w8n3iem"
+        },
+        "categories": {
+            "auth": {
+                "cognito58495720": {}
+            }
         }
     }
 }
