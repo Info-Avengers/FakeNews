@@ -95,7 +95,7 @@ function ProductValues(props) {
               </Typography>
               <Typography variant="h5">
                 {
-                  "Once a source has been exposed as undeniably fake, our shadow hackers will take measures to slow down or stop the source from providing further fake news to the public."
+                  "Once a source has been exposed as undeniably fake, our Info Avengers will take measures to slow down or stop the source from providing further fake news to the public."
                 }
               </Typography>
             </div>
