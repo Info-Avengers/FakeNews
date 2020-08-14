@@ -1,51 +1,11 @@
 {
-    "storage": {
-        "dynamo55d79b05": {
-            "service": "DynamoDB",
-            "providerPlugin": "awscloudformation"
-        }
-    },
-    "function": {
-        "fakenews60106483": {
-            "build": true,
-            "providerPlugin": "awscloudformation",
-            "service": "Lambda",
-            "dependsOn": [
-                {
-                    "category": "storage",
-                    "resourceName": "dynamo55d79b05",
-                    "attributes": [
-                        "Name",
-                        "Arn"
-                    ],
-                    "attributeEnvMap": {
-                        "Name": "TABLE_NAME",
-                        "Arn": "TABLE_ARN"
-                    }
-                }
-            ]
-        }
-    },
-    "auth": {
-        "cognito58495720": {
-            "service": "Cognito",
-            "providerPlugin": "awscloudformation"
-        }
-    },
-    "api": {
-        "api5d7ab736": {
-            "service": "API Gateway",
-            "providerPlugin": "awscloudformation",
-            "dependsOn": [
-                {
-                    "category": "function",
-                    "resourceName": "fakenews60106483",
-                    "attributes": [
-                        "Name",
-                        "Arn"
-                    ]
-                }
-            ]
-        }
-    }
+	"storage": {},
+	"function": {},
+	"auth": {
+		"cognito58495720": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"api": {}
 }
