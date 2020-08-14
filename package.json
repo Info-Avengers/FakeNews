@@ -37,6 +37,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "dev": "gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
