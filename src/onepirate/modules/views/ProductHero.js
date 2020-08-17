@@ -24,7 +24,7 @@ const styles = (theme) => ({
     },
   },
   more: {
-    marginTop: theme.spacing(6),
+    marginTop: theme.spacing(4),
   },
 });
 
