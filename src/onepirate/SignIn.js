@@ -1,7 +1,6 @@
-/* eslint-disable import/order */
 import withRoot from './modules/withRoot';
 // --- Post bootstrap -----
-import * as React from 'react';
+import React from 'react';
 import { Field, Form, FormSpy } from 'react-final-form';
 import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
@@ -58,20 +57,12 @@ function SignIn() {
           </Typography>
           <Typography variant="body2" align="center">
             {'Not a member yet? '}
-            <Link
-              href="/premium-themes/onepirate/sign-up/"
-              align="center"
-              underline="always"
-            >
+            <Link href="/premium-themes/onepirate/sign-up/" align="center" underline="always">
               Sign Up here
             </Link>
           </Typography>
         </React.Fragment>
-        <Form
-          onSubmit={handleSubmit}
-          subscription={{ submitting: true }}
-          validate={validate}
-        >
+        <Form onSubmit={handleSubmit} subscription={{ submitting: true }} validate={validate}>
           {({ handleSubmit2, submitting }) => (
             <form onSubmit={handleSubmit2} className={classes.form} noValidate>
               <Field
@@ -120,10 +111,7 @@ function SignIn() {
           )}
         </Form>
         <Typography align="center">
-          <Link
-            underline="always"
-            href="/premium-themes/onepirate/forgot-password/"
-          >
+          <Link underline="always" href="/premium-themes/onepirate/forgot-password/">
             Forgot password?
           </Link>
         </Typography>

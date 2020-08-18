@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { capitalize } from '@material-ui/core/utils';
@@ -52,11 +52,7 @@ function Typography(props) {
     <MuiTypography variantMapping={variantMapping} variant={variant} {...other}>
       {children}
       {marked ? (
-        <span
-          className={
-            classes[`marked${capitalize(variant) + capitalize(marked)}`]
-          }
-        />
+        <span className={classes[`marked${capitalize(variant) + capitalize(marked)}`]} />
       ) : null}
     </MuiTypography>
   );
