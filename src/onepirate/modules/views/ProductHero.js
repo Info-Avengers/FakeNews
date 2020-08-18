@@ -48,9 +48,8 @@ function ProductHero(props) {
         variant="h5"
         className={classes.h5}
       >
-        Our goal is to find and disrupt news networks distributing disinformation.
-        If you have any tips regarding profiles or sites that are part of a fake news network,
-        please submit them bellow to have our analysts review and follow up. 
+        Our goal is to find and disrupt news outlets distributing undeniably
+        fake information.
       </Typography>
       <Button
         color="secondary"
@@ -60,7 +59,7 @@ function ProductHero(props) {
         component="a"
         href="/premium-themes/onepirate/sign-up/"
       >
-        Submit Tip
+        Register
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
         Join our cause
