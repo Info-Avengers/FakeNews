@@ -57,7 +57,7 @@ function ProductValues(props) {
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                Explore Social Media and Open Web
+                Social Media and Web
               </Typography>
               <Typography variant="h5">
                 {
