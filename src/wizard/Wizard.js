@@ -10,9 +10,14 @@ import StepLabel from "@material-ui/core/StepLabel";
 import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
-import AddressForm from "./AddressForm";
-import PaymentForm from "./PaymentForm";
+import OffendingAccount from "./OffendingAccount";
+import IncidentOverview from "./IncidentOverview";
 import Review from "./Review";
+import { v4 as uuidv4 } from "uuid";
+
+import Amplify, { API } from "aws-amplify";
+import awsExports from "../aws-exports";
+Amplify.configure(awsExports);
 
 function Copyright() {
   const classes = useStyles();
@@ -65,32 +70,51 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const steps = ["Offending account", "Incident overview", "Screenshots"];
-
-function getStepContent(step) {
-  switch (step) {
-    case 0:
-      return <AddressForm />;
-    case 1:
-      return <PaymentForm />;
-    case 2:
-      return <Review />;
-    default:
-      throw new Error("Unknown step");
-  }
-}
-
-export default function Checkout() {
+export default function Wizard() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
+  const [profileUrl, setProfileUrl] = React.useState("");
+  const [overview, setOverview] = React.useState("");
+  const [imageKeys, setImageKeys] = React.useState([]);
+  console.log(profileUrl, overview, imageKeys);
 
   const handleNext = () => {
     setActiveStep(activeStep + 1);
+    console.log(activeStep);
+    if (activeStep == 2) {
+      postData();
+    }
   };
 
   const handleBack = () => {
     setActiveStep(activeStep - 1);
   };
+
+  async function postData() {
+    const apiName = "api814905b4";
+    const path = "/tips";
+    const myInit = {
+      body: { id: uuidv4(), profileUrl, overview, imageKeys },
+      headers: {},
+    };
+
+    return await API.post(apiName, path, myInit);
+  }
+
+  const steps = ["Offending account", "Incident overview", "Screenshots"];
+
+  function getStepContent(step) {
+    switch (step) {
+      case 0:
+        return <OffendingAccount setProfileUrl={setProfileUrl} />;
+      case 1:
+        return <IncidentOverview setOverview={setOverview} />;
+      case 2:
+        return <Review setImageKeys={setImageKeys} />;
+      default:
+        throw new Error("Unknown step");
+    }
+  }
 
   return (
     <React.Fragment>

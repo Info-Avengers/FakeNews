@@ -5,7 +5,7 @@ import TextField from "@material-ui/core/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 
-export default function PaymentForm() {
+export default function IncidentOverview({ setOverview }) {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
@@ -23,6 +23,7 @@ export default function PaymentForm() {
             rowsMax={40}
             fullWidth
             autoComplete="details"
+            onChange={(e) => setOverview(e.target.value)}
           />
         </Grid>
       </Grid>

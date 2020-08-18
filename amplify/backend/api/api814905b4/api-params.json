@@ -1,0 +1,40 @@
+{
+    "paths": [
+        {
+            "name": "/tips",
+            "lambdaFunction": "fakenews1d3c0567",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST"
+                ],
+                "unauth": [
+                    "/POST"
+                ]
+            }
+        }
+    ],
+    "resourceName": "api814905b4",
+    "apiName": "api814905b4",
+    "functionArns": [
+        {
+            "lambdaFunction": "fakenews1d3c0567"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-fakenews-dev-222401-authRole",
+        "unAuthRoleName": "amplify-fakenews-dev-222401-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "fakenews1d3c0567",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

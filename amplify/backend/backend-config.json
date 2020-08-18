@@ -1,17 +1,56 @@
 {
-  "storage": {
-    "screenshots": {
-      "service": "S3",
-      "providerPlugin": "awscloudformation"
-    }
-  },
-  "function": {},
-  "auth": {
-    "fakenewsa6144467": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": []
-    }
-  },
-  "api": {}
+	"storage": {
+		"screenshots": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		},
+		"dynamo2f251fdf": {
+			"service": "DynamoDB",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"function": {
+		"fakenews1d3c0567": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "dynamo2f251fdf",
+					"attributes": [
+						"Name",
+						"Arn"
+					],
+					"attributeEnvMap": {
+						"Name": "TABLE_NAME",
+						"Arn": "TABLE_ARN"
+					}
+				}
+			]
+		}
+	},
+	"auth": {
+		"fakenewsa6144467": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"api814905b4": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "fakenews1d3c0567",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	}
 }

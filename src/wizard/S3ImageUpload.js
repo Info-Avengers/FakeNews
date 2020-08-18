@@ -15,7 +15,7 @@ export const setProfileImage = (file) => {
   });
 };
 
-const S3ImageUpload = () => {
+const S3ImageUpload = ({ setImageKeys }) => {
   const [keys, setKeys] = React.useState([]);
   const [url, setUrl] = React.useState("");
 
@@ -26,6 +26,7 @@ const S3ImageUpload = () => {
     setUrl(imgUrl);
     const newKeys = keys.concat(response.key);
     setKeys(newKeys);
+    setImageKeys(newKeys);
   };
 
   return (
