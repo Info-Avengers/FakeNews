@@ -76,7 +76,6 @@ export default function Wizard() {
   const [profileUrl, setProfileUrl] = React.useState("");
   const [overview, setOverview] = React.useState("");
   const [imageKeys, setImageKeys] = React.useState([]);
-  console.log(profileUrl, overview, imageKeys);
 
   const handleNext = () => {
     setActiveStep(activeStep + 1);
@@ -101,7 +100,7 @@ export default function Wizard() {
     return await API.post(apiName, path, myInit);
   }
 
-  const steps = ["Offending account", "Incident overview", "Screenshots"];
+  const steps = ["Account", "Overview", "Evidence"];
 
   function getStepContent(step) {
     switch (step) {
