@@ -28,8 +28,6 @@ const S3ImageUpload = () => {
     setKeys(newKeys);
   };
 
-  console.log(keys);
-
   return (
     <>
       <Grid container alignItems="center">
@@ -45,7 +43,7 @@ const S3ImageUpload = () => {
         })}
         <Box marginLeft={1}>
           <Button component="label">
-            Upload a screenshot
+            Upload evidence
             <Input
               type="file"
               accept="image/*"
