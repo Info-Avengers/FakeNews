@@ -1,7 +1,6 @@
-/* eslint-disable import/order */
 import withRoot from './modules/withRoot';
 // --- Post bootstrap -----
-import * as React from 'react';
+import React from 'react';
 import { Field, Form, FormSpy } from 'react-final-form';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from './modules/components/Typography';
@@ -60,11 +59,7 @@ function ForgotPassword() {
               'send you a link to reset your password.'}
           </Typography>
         </React.Fragment>
-        <Form
-          onSubmit={handleSubmit}
-          subscription={{ submitting: true }}
-          validate={validate}
-        >
+        <Form onSubmit={handleSubmit} subscription={{ submitting: true }} validate={validate}>
           {({ handleSubmit2, submitting }) => (
             <form onSubmit={handleSubmit2} className={classes.form} noValidate>
               <Field

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import { withStyles } from "@material-ui/core/styles";
@@ -45,7 +45,7 @@ const styles = (theme) => ({
   },
   arrowDown: {
     position: "absolute",
-    bottom: theme.spacing(1),
+    bottom: theme.spacing(4),
   },
 });
 

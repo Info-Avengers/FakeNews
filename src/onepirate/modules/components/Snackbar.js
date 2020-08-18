@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import MuiSnackbar from '@material-ui/core/Snackbar';
@@ -45,10 +45,7 @@ function Snackbar(props) {
 
   return (
     <MuiSnackbar
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'center',
-      }}
+      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
       autoHideDuration={6000}
       transition={Transition}
       ContentProps={{
