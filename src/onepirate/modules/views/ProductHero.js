@@ -58,7 +58,7 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="https://github.com/Info-Avengers/FakeNews/new/master/content/blog"
       >
         Submit Tip
       </Button>
