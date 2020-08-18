@@ -79,7 +79,6 @@ export default function Wizard() {
 
   const handleNext = () => {
     setActiveStep(activeStep + 1);
-    console.log(activeStep);
     if (activeStep == 2) {
       postData();
     }
