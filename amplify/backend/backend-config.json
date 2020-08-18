@@ -1,21 +1,17 @@
 {
-	"storage": {
-		"screenshots": {
-			"service": "S3",
-			"providerPlugin": "awscloudformation"
-		}
-	},
-	"function": {},
-	"auth": {
-		"cognito58495720": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation"
-		},
-		"fakenewsa6144467": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": []
-		}
-	},
-	"api": {}
+  "storage": {
+    "screenshots": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "function": {},
+  "auth": {
+    "fakenewsa6144467": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
+    }
+  },
+  "api": {}
 }
