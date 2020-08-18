@@ -57,11 +57,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        Disinformation Exposed is a whistleblowing database for fake news- incidents are investigated and reported on by anonymous members of the infosec community.
       </p>
     </div>
   )
