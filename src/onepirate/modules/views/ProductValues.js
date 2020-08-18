@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -57,12 +57,11 @@ function ProductValues(props) {
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                Explore Social Media and Open Web
+                EXPLORE SOCIAL MEDIA AND OPEN WEB
               </Typography>
               <Typography variant="h5">
-                {
-                  "With our elite researchers using advanced contemporary web search methods we will find suspicious news outlets."
-                }
+                Our elite researchers use advanced web search methods with many
+                years of investigative experience.
               </Typography>
             </div>
           </Grid>
@@ -74,12 +73,12 @@ function ProductValues(props) {
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
-                Research and Document
+                RESEARCH AND DOCUMENT
               </Typography>
               <Typography variant="h5">
-                {
-                  "Suspicious sources will then undergo extensive scrutiny from our crack team of researchers documenting any and all evidence of inconsistent reporting."
-                }
+                Submit suspicious sources, accounts, sites, and influence
+                networks to be reviewed by researchers. Please submit as much
+                evidence as possible along with your tips.
               </Typography>
             </div>
           </Grid>
@@ -91,12 +90,12 @@ function ProductValues(props) {
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                Eradication
+                ERADICATION
               </Typography>
               <Typography variant="h5">
-                {
-                  "Once a source has been exposed as undeniably fake, our Info Avengers will take measures to slow down or stop the source from providing further fake news to the public."
-                }
+                Once a source has been analyzed as fake, our Info Avengers will
+                take measures to slow down or stop the source from providing
+                further fake news to the public.
               </Typography>
             </div>
           </Grid>

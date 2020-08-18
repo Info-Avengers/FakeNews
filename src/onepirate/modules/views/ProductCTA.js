@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -83,16 +83,8 @@ function ProductCTA(props) {
               <Typography variant="h5">
                 Taste the holidays of the everyday close to home.
               </Typography>
-              <TextField
-                noBorder
-                className={classes.textField}
-                placeholder="Your email"
-              />
-              <Button
-                type="submit"
-                variant="contained"
-                className={classes.button}
-              >
+              <TextField noBorder className={classes.textField} placeholder="Your email" />
+              <Button type="submit" color="primary" variant="contained" className={classes.button}>
                 Keep me updated
               </Button>
             </form>
