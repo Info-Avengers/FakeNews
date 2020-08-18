@@ -50,8 +50,26 @@ export default function Report() {
 
   return (
     <Grid container component="main" className={classes.root}>
-      <Grid item xs={false} sm={4} md={7} className={classes.image} />
-      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+      <Grid
+        item
+        xs={false}
+        sm={3}
+        md={5}
+        lg={6}
+        xl={7}
+        className={classes.image}
+      />
+      <Grid
+        item
+        xs={12}
+        sm={9}
+        md={7}
+        lg={6}
+        xl={5}
+        component={Paper}
+        elevation={6}
+        square
+      >
         <div className={classes.paper}>
           <Wizard />
         </div>

@@ -10,7 +10,7 @@ export default function OffendingAccount({ setProfileUrl }) {
         Offending Account
       </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={8} md={6}>
           <TextField
             required
             id="profileURL"
